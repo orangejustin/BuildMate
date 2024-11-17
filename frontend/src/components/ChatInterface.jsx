@@ -10,10 +10,13 @@ const ChatMessage = ({ message, isUser }) => (
   )}>
     <div className={classNames(
       "max-w-[70%] rounded-lg px-4 py-2",
-      isUser ? "bg-user-message" : "bg-message-bg"
+      isUser ? "bg-user-message text-white" : "bg-message-bg text-black"
     )}>
-      <p className="text-white">{message.content}</p>
-      <span className="text-xs text-gray-400">
+      <p>{message.content}</p>
+      <span className={classNames(
+        "text-xs",
+        isUser ? "text-gray-200" : "text-gray-500"
+      )}>
         {dayjs(message.createTime).format('HH:mm')}
       </span>
     </div>
@@ -70,18 +73,18 @@ export default function ChatInterface() {
         <div ref={messagesEndRef} />
       </div>
       
-      <form onSubmit={handleSubmit} className="p-4 border-t border-gray-700">
+      <form onSubmit={handleSubmit} className="p-4 border-t border-gray-200">
         <div className="flex gap-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 bg-message-bg text-white rounded-lg px-4 py-2 focus:outline-none"
+            className="flex-1 bg-gray-100 text-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-user-message focus:bg-white"
             placeholder="Type a message..."
           />
           <button
             type="submit"
-            className="bg-user-message text-white px-6 py-2 rounded-lg"
+            className="bg-user-message text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors"
           >
             Send
           </button>

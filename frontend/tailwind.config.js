@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'chat-bg': '#000000',
-        'message-bg': '#262626',
-        'user-message': '#4CAF50',
+        'chat-bg': '#ffffff',
+        'message-bg': '#f0f0f0',
+        'user-message': '#1a75ff',
       }
     },
   },
