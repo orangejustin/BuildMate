@@ -1,11 +1,4 @@
-﻿"""
-Sample dataset for Arbor LLM Technical Assessment
-This data represents a realistic snapshot of building materials information,
-including products, specifications, technical documents, and related information.
-"""
-
-
-sample_dataset = {
+﻿sample_dataset = {
     "product_catalog": [
         {
             "id": "LUM-2x4-8-PT",
