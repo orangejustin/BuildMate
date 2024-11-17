@@ -3,3 +3,10 @@ uvicorn
 openai
 python-dotenv
 pydantic
+
+langchain-openai
+langchain-community
+lancedb
+langchain-experimental
+
+pandas

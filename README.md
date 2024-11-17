@@ -5,7 +5,7 @@ A chatbot interface built with Python backend and React frontend.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.10
 - Node.js 16+ (to use npm/pnpm)
 
 ## Installation

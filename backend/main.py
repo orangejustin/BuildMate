@@ -2,23 +2,22 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
-import openai
 from dotenv import load_dotenv
 import os
-import time
+from services.chat_service import ChatService
 
 # Load environment variables
 load_dotenv()
 
-# Initialize OpenAI client
-client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+# Initialize ChatService with API key
+chat_service = ChatService(api_key=os.getenv('OPENAI_API_KEY'))
 
 app = FastAPI()
 
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite's default port
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -36,24 +35,8 @@ class ChatRequest(BaseModel):
 @app.post("/chat")
 async def chat(request: ChatRequest):
     try:
-        # Convert messages to OpenAI format
-        openai_messages = [{"role": msg.role, "content": msg.content} for msg in request.messages]
-        
-        # Call OpenAI API
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=openai_messages,
-            temperature=0.7,
-        )
-        
-        # Format response to match ProChat expectations
-        return {
-            "id": str(response.id),
-            "role": "assistant",
-            "content": response.choices[0].message.content,
-            "createTime": int(time.time() * 1000),
-            "status": "success"
-        }
+        messages = [msg.dict() for msg in request.messages]
+        return chat_service.get_chat_response(messages)
     except Exception as e:
         print(f"Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))

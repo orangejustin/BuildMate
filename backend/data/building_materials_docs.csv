@@ -1,0 +1,246 @@
+vector,id,text,metadata
+"[ 0.00863967  0.01171492 -0.00322178 ... -0.01730692 -0.03875095
+ -0.05063825]",71440fd3-9b7a-4170-8440-9d47aa3adcb7,"Product Information
+                    Name: Pressure Treated Lumber 2x4x8
+                    Category: Lumber
+                    Manufacturer: TimberTech Pro
+                    ID: LUM-2x4-8-PT
+                    Specifications:
+                    {
+  ""dimensions"": ""1.5\"" x 3.5\"" x 96\"""",
+  ""grade"": ""Construction Grade"",
+  ""species"": ""Southern Yellow Pine"",
+  ""treatment"": ""Pressure Treated"",
+  ""moisture_content"": ""19% or less"",
+  ""weight_per_piece"": ""12.5 lbs"",
+  ""treatment_retention"": ""0.40 pcf"",
+  ""grade_stamp"": ""SPIB"",
+  ""use_category"": ""UC4A - Ground Contact""
+}
+                    Applications:
+                    Ground contact applications, Deck framing, General construction, Outdoor structures
+                    Technical Details:
+                    {
+  ""bending_strength"": ""875-1,200 psi"",
+  ""modulus_of_elasticity"": ""1,400,000 psi"",
+  ""fastener_requirements"": ""Hot-dipped galvanized or stainless steel"",","{'applicable_products': None, 'category': 'Lumber', 'code_id': None, 'doc_id': None, 'doc_type': 'product', 'guide_id': None, 'jurisdiction': None, 'manufacturer': 'TimberTech Pro', 'product_id': 'LUM-2x4-8-PT', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[-0.01204998  0.00709244 -0.01710782 ... -0.01343265 -0.01785289
+ -0.01629112]",b18491c5-2b17-4b7d-ac3a-b418c2d61801,"{
+  ""bending_strength"": ""875-1,200 psi"",
+  ""modulus_of_elasticity"": ""1,400,000 psi"",
+  ""fastener_requirements"": ""Hot-dipped galvanized or stainless steel"",
+  ""installation_temperature"": ""40\u00b0F to 90\u00b0F"",
+  ""warranty"": ""25 years limited""
+}
+                    Price History:
+                    [
+  {
+    ""date"": ""2024-01-01"",
+    ""price"": 8.97
+  },
+  {
+    ""date"": ""2024-02-01"",
+    ""price"": 9.25
+  },
+  {
+    ""date"": ""2024-03-01"",
+    ""price"": 8.89
+  }
+]
+                    Current Stock:
+                    {
+  ""san_francisco"": 1200,
+  ""los_angeles"": 850,
+  ""seattle"": 950
+}","{'applicable_products': None, 'category': 'Lumber', 'code_id': None, 'doc_id': None, 'doc_type': 'product', 'guide_id': None, 'jurisdiction': None, 'manufacturer': 'TimberTech Pro', 'product_id': 'LUM-2x4-8-PT', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.01377848  0.01468433 -0.00215055 ... -0.00986901 -0.03203853
+ -0.02822442]",b0f5e3c1-7137-4943-b72f-270751e23115,"Product Information
+                    Name: CDX Plywood 23/32"" 4x8
+                    Category: Plywood
+                    Manufacturer: PlyPro Industries
+                    ID: PLY-CDX-23/32
+                    Specifications:
+                    {
+  ""dimensions"": ""23/32\"" x 48\"" x 96\"""",
+  ""grade"": ""CDX"",
+  ""material"": ""Softwood"",
+  ""core_type"": ""Veneer"",
+  ""face_grade"": ""C"",
+  ""back_grade"": ""D"",
+  ""weight_per_sheet"": ""52 lbs"",
+  ""thickness_tolerance"": ""+/- 1/32\""""
+}
+                    Applications:
+                    Roof sheathing, Wall sheathing, Subflooring, General construction
+                    Technical Details:
+                    {
+  ""span_rating"": ""24/16"",
+  ""strength_axis"": ""48\"" direction"",
+  ""water_resistance"": ""Exposure 1"",
+  ""flame_spread_rating"": ""Class C"",
+  ""formaldehyde_emission"": ""PS 1-09 compliant""
+}
+                    Price History:
+                    [
+  {
+    ""date"": ""2024-01-01"",
+    ""price"": 45.99
+  },
+  {","{'applicable_products': None, 'category': 'Plywood', 'code_id': None, 'doc_id': None, 'doc_type': 'product', 'guide_id': None, 'jurisdiction': None, 'manufacturer': 'PlyPro Industries', 'product_id': 'PLY-CDX-23/32', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.00141187  0.00542401 -0.03101868 ... -0.00265525 -0.01457282
+ -0.0158357 ]",aefd2158-ca6a-472b-9d2e-351b08fe37c2,"""flame_spread_rating"": ""Class C"",
+  ""formaldehyde_emission"": ""PS 1-09 compliant""
+}
+                    Price History:
+                    [
+  {
+    ""date"": ""2024-01-01"",
+    ""price"": 45.99
+  },
+  {
+    ""date"": ""2024-02-01"",
+    ""price"": 43.75
+  },
+  {
+    ""date"": ""2024-03-01"",
+    ""price"": 44.5
+  }
+]
+                    Current Stock:
+                    {}","{'applicable_products': None, 'category': 'Plywood', 'code_id': None, 'doc_id': None, 'doc_type': 'product', 'guide_id': None, 'jurisdiction': None, 'manufacturer': 'PlyPro Industries', 'product_id': 'PLY-CDX-23/32', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.00459152  0.01317393  0.00467494 ... -0.02144934 -0.02580061
+ -0.03785335]",5b448d85-d4a3-4ded-815b-fe746eb13118,"Pressure Treated Lumber Installation Guide
+                    Product ID: LUM-2x4-8-PT
+                    Pressure Treated Lumber Installation Guidelines
+1. Storage and Handling
+- Store lumber off the ground
+- Keep material dry and covered
+- Allow wood to acclimate to local conditions
+2. Cutting and Installation
+- Always wear appropriate PPE
+- Seal cut ends with preservative
+- Use appropriate fasteners
+- Maintain proper ventilation
+3. Fastener Requirements
+- Use hot-dipped galvanized or stainless steel fasteners
+- Minimum coating requirement G-185
+- Do not use standard steel or aluminum fasteners
+4. Recommended Applications
+- Ground contact applications
+- Deck framing
+- Fence posts
+- Outdoor structures
+5. Safety Considerations
+- Wear dust mask when cutting
+- Work in ventilated area
+- Clean up sawdust
+- Dispose of waste properly","{'applicable_products': None, 'category': None, 'code_id': None, 'doc_id': 'TD-001', 'doc_type': 'technical_document', 'guide_id': None, 'jurisdiction': None, 'manufacturer': None, 'product_id': 'LUM-2x4-8-PT', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.01781138 -0.00018728  0.00079961 ... -0.03788203 -0.01164439
+ -0.0174436 ]",e63d2620-92a2-4dc3-87bd-2289612652ec,"General Construction Requirements - Wood
+                    Jurisdiction: International Building Code
+                    Wood Construction Guidelines - IBC 2021 Section 2304
+1. General Requirements
+- Design requirements for lumber grades
+- Load-bearing capacity specifications
+- Connection details and requirements
+2. Protection Against Decay
+- Required treatments for ground contact
+- Ventilation requirements
+- Moisture control measures
+3. Fire-Retardant Requirements
+- Treatment specifications
+- Testing requirements
+- Labeling requirements","{'applicable_products': array(['LUM-2x4-8-PT', 'PLY-CDX-23/32'], dtype=object), 'category': None, 'code_id': 'IBC-2021-2304', 'doc_id': None, 'doc_type': 'building_code', 'guide_id': None, 'jurisdiction': 'International Building Code', 'manufacturer': None, 'product_id': None, 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.01476772  0.01054182 -0.00730524 ... -0.018725   -0.01168838
+ -0.04463075]",a3aeeac5-e892-4e78-918f-718320debf75,"Deck Framing Installation Guide
+                    Product ID: LUM-2x4-8-PT
+                    Deck Framing Installation Best Practices
+Step 1: Planning and Layout
+- Determine joist spacing (16"" O.C. typical)
+- Plan for proper drainage (1/4"" per foot slope)
+- Account for ventilation requirements
+Step 2: Material Preparation
+- Allow lumber to acclimate
+- Sort material for best pieces
+- Pre-cut to required lengths
+Step 3: Installation Process
+1. Install ledger board
+   - Use proper flashing
+   - Install with lag screws
+   - Maintain proper spacing
+2. Set support posts
+   - Minimum depth requirements
+   - Use proper concrete footings
+   - Ensure plumb installation
+3. Install beams and joists
+   - Use proper hangers
+   - Maintain level installation
+   - Install blocking as required","{'applicable_products': None, 'category': None, 'code_id': None, 'doc_id': None, 'doc_type': 'installation_guide', 'guide_id': 'IG-PT-001', 'jurisdiction': None, 'manufacturer': None, 'product_id': 'LUM-2x4-8-PT', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.00769662 -0.00159237  0.01057037 ... -0.02815218 -0.01778803
+ -0.02809897]",d2629a4a-0bd8-4017-9f12-736554f300d4,"Pressure Treated Lumber Safety Guide
+                    Product ID: LUM-2x4-8-PT
+                    Safety Guidelines for Pressure Treated Lumber
+1. Personal Protective Equipment
+- Wear safety glasses
+- Use dust mask when cutting
+- Wear work gloves
+- Use hearing protection
+2. Safe Handling Practices
+- Proper lifting techniques
+- Clean work area
+- Proper tool selection
+- Ventilation requirements
+3. First Aid Measures
+- Eye contact procedures
+- Skin contact procedures
+- Inhalation procedures
+- Emergency contacts
+4. Environmental Considerations
+- Proper disposal methods
+- Recycling guidelines
+- Environmental impact
+- Storage requirements","{'applicable_products': None, 'category': None, 'code_id': None, 'doc_id': 'SD-PT-001', 'doc_type': 'safety_document', 'guide_id': None, 'jurisdiction': None, 'manufacturer': None, 'product_id': 'LUM-2x4-8-PT', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.00336498  0.01667662 -0.01496011 ...  0.00239159 -0.02930619
+ -0.04379182]",fa422c9c-2069-496c-aed6-28a9bf86bd85,"Material Alternatives for Product ID: LUM-2x4-8-PT
+                    
+                    Alternatives:
+                    [
+  {
+    ""id"": ""COMP-2x4-8"",
+    ""name"": ""Composite Lumber 2x4"",
+    ""comparison"": {
+      ""durability"": ""Higher"",
+      ""cost"": ""300% more"",
+      ""maintenance"": ""Lower"",
+      ""sustainability"": ""Higher"",
+      ""installation_difficulty"": ""Similar""
+    }
+  },
+  {
+    ""id"": ""STEEL-2x4"",
+    ""name"": ""Steel Stud 2x4"",
+    ""comparison"": {
+      ""durability"": ""Higher"",
+      ""cost"": ""200% more"",
+      ""maintenance"": ""Lower"",
+      ""sustainability"": ""Lower"",
+      ""installation_difficulty"": ""Higher""
+    }
+  }
+]","{'applicable_products': None, 'category': None, 'code_id': None, 'doc_id': None, 'doc_type': 'material_alternative', 'guide_id': None, 'jurisdiction': None, 'manufacturer': None, 'product_id': 'LUM-2x4-8-PT', 'relevant_codes': None, 'relevant_documents': None, 'relevant_products': None}"
+"[ 0.01637489  0.01064301 -0.00813406 ... -0.03034759 -0.00969548
+ -0.06293721]",46a8324e-ebc1-4e79-836b-a3aeb04071f2,"Query: What size lumber do I need for a deck joist spanning 12 feet?
+                    Context: Residential deck construction
+                    Relevant Products: LUM-2x4-8-PT
+                    Relevant Codes: IBC-2021-2304
+                    Relevant Documents: 
+                    Considerations: Load requirements, Spacing, Environmental conditions
+                    Key Points:","{'applicable_products': None, 'category': None, 'code_id': None, 'doc_id': None, 'doc_type': 'typical_query', 'guide_id': None, 'jurisdiction': None, 'manufacturer': None, 'product_id': None, 'relevant_codes': array(['IBC-2021-2304'], dtype=object), 'relevant_documents': array([], dtype=object), 'relevant_products': array(['LUM-2x4-8-PT'], dtype=object)}"
+"[ 0.00584099 -0.00419493  0.00981531 ... -0.00518257 -0.03445541
+ -0.01994287]",dbb902d8-498b-47e0-b48e-9d7629d36cc1,"Query: Can I use regular screws with pressure treated lumber?
+                    Context: Deck construction
+                    Relevant Products: LUM-2x4-8-PT
+                    Relevant Codes: 
+                    Relevant Documents: TD-001, SD-PT-001
+                    Considerations: 
+                    Key Points: Corrosion resistance, Material compatibility, Safety considerations","{'applicable_products': None, 'category': None, 'code_id': None, 'doc_id': None, 'doc_type': 'typical_query', 'guide_id': None, 'jurisdiction': None, 'manufacturer': None, 'product_id': None, 'relevant_codes': array([], dtype=object), 'relevant_documents': array(['TD-001', 'SD-PT-001'], dtype=object), 'relevant_products': array(['LUM-2x4-8-PT'], dtype=object)}"

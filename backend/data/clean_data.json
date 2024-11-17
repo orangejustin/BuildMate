@@ -1,0 +1,194 @@
+{
+  "product_catalog": [
+    {
+      "id": "LUM-2x4-8-PT",
+      "category": "Lumber",
+      "name": "Pressure Treated Lumber 2x4x8",
+      "manufacturer": "TimberTech Pro",
+      "specifications": {
+        "dimensions": "1.5\" x 3.5\" x 96\"",
+        "grade": "Construction Grade",
+        "species": "Southern Yellow Pine",
+        "treatment": "Pressure Treated",
+        "moisture_content": "19% or less",
+        "weight_per_piece": "12.5 lbs",
+        "treatment_retention": "0.40 pcf",
+        "grade_stamp": "SPIB",
+        "use_category": "UC4A - Ground Contact"
+      },
+      "applications": [
+        "Ground contact applications",
+        "Deck framing",
+        "General construction",
+        "Outdoor structures"
+      ],
+      "technical_details": {
+        "bending_strength": "875-1,200 psi",
+        "modulus_of_elasticity": "1,400,000 psi",
+        "fastener_requirements": "Hot-dipped galvanized or stainless steel",
+        "installation_temperature": "40°F to 90°F",
+        "warranty": "25 years limited"
+      },
+      "price_history": [
+        {
+          "date": "2024-01-01",
+          "price": 8.97
+        },
+        {
+          "date": "2024-02-01",
+          "price": 9.25
+        },
+        {
+          "date": "2024-03-01",
+          "price": 8.89
+        }
+      ],
+      "current_stock": {
+        "san_francisco": 1200,
+        "los_angeles": 850,
+        "seattle": 950
+      }
+    },
+    {
+      "id": "PLY-CDX-23/32",
+      "category": "Plywood",
+      "name": "CDX Plywood 23/32\" 4x8",
+      "manufacturer": "PlyPro Industries",
+      "specifications": {
+        "dimensions": "23/32\" x 48\" x 96\"",
+        "grade": "CDX",
+        "material": "Softwood",
+        "core_type": "Veneer",
+        "face_grade": "C",
+        "back_grade": "D",
+        "weight_per_sheet": "52 lbs",
+        "thickness_tolerance": "+/- 1/32\""
+      },
+      "applications": [
+        "Roof sheathing",
+        "Wall sheathing",
+        "Subflooring",
+        "General construction"
+      ],
+      "technical_details": {
+        "span_rating": "24/16",
+        "strength_axis": "48\" direction",
+        "water_resistance": "Exposure 1",
+        "flame_spread_rating": "Class C",
+        "formaldehyde_emission": "PS 1-09 compliant"
+      },
+      "price_history": [
+        {
+          "date": "2024-01-01",
+          "price": 45.99
+        },
+        {
+          "date": "2024-02-01",
+          "price": 43.75
+        },
+        {
+          "date": "2024-03-01",
+          "price": 44.5
+        }
+      ]
+    }
+  ],
+  "technical_documents": [
+    {
+      "id": "TD-001",
+      "product_id": "LUM-2x4-8-PT",
+      "title": "Pressure Treated Lumber Installation Guide",
+      "content": "\nPressure Treated Lumber Installation Guidelines\n\n\n1. Storage and Handling\n- Store lumber off the ground\n- Keep material dry and covered\n- Allow wood to acclimate to local conditions\n\n\n2. Cutting and Installation\n- Always wear appropriate PPE\n- Seal cut ends with preservative\n- Use appropriate fasteners\n- Maintain proper ventilation\n\n\n3. Fastener Requirements\n- Use hot-dipped galvanized or stainless steel fasteners\n- Minimum coating requirement G-185\n- Do not use standard steel or aluminum fasteners\n\n\n4. Recommended Applications\n- Ground contact applications\n- Deck framing\n- Fence posts\n- Outdoor structures\n\n\n5. Safety Considerations\n- Wear dust mask when cutting\n- Work in ventilated area\n- Clean up sawdust\n- Dispose of waste properly\n            "
+    }
+  ],
+  "building_codes": [
+    {
+      "code_id": "IBC-2021-2304",
+      "title": "General Construction Requirements - Wood",
+      "jurisdiction": "International Building Code",
+      "applicable_products": [
+        "LUM-2x4-8-PT",
+        "PLY-CDX-23/32"
+      ],
+      "summary": "\nWood Construction Guidelines - IBC 2021 Section 2304\n\n\n1. General Requirements\n- Design requirements for lumber grades\n- Load-bearing capacity specifications\n- Connection details and requirements\n\n\n2. Protection Against Decay\n- Required treatments for ground contact\n- Ventilation requirements\n- Moisture control measures\n\n\n3. Fire-Retardant Requirements\n- Treatment specifications\n- Testing requirements\n- Labeling requirements\n            "
+    }
+  ],
+  "installation_guides": [
+    {
+      "guide_id": "IG-PT-001",
+      "product_id": "LUM-2x4-8-PT",
+      "title": "Deck Framing Installation Guide",
+      "content": "\nDeck Framing Installation Best Practices\n\n\nStep 1: Planning and Layout\n- Determine joist spacing (16\" O.C. typical)\n- Plan for proper drainage (1/4\" per foot slope)\n- Account for ventilation requirements\n\n\nStep 2: Material Preparation\n- Allow lumber to acclimate\n- Sort material for best pieces\n- Pre-cut to required lengths\n\n\nStep 3: Installation Process\n1. Install ledger board\n   - Use proper flashing\n   - Install with lag screws\n   - Maintain proper spacing\n\n\n2. Set support posts\n   - Minimum depth requirements\n   - Use proper concrete footings\n   - Ensure plumb installation\n\n\n3. Install beams and joists\n   - Use proper hangers\n   - Maintain level installation\n   - Install blocking as required\n            "
+    }
+  ],
+  "safety_documents": [
+    {
+      "doc_id": "SD-PT-001",
+      "product_id": "LUM-2x4-8-PT",
+      "title": "Pressure Treated Lumber Safety Guide",
+      "content": "\nSafety Guidelines for Pressure Treated Lumber\n\n\n1. Personal Protective Equipment\n- Wear safety glasses\n- Use dust mask when cutting\n- Wear work gloves\n- Use hearing protection\n\n\n2. Safe Handling Practices\n- Proper lifting techniques\n- Clean work area\n- Proper tool selection\n- Ventilation requirements\n\n\n3. First Aid Measures\n- Eye contact procedures\n- Skin contact procedures\n- Inhalation procedures\n- Emergency contacts\n\n\n4. Environmental Considerations\n- Proper disposal methods\n- Recycling guidelines\n- Environmental impact\n- Storage requirements\n            "
+    }
+  ],
+  "material_alternatives": [
+    {
+      "primary_product_id": "LUM-2x4-8-PT",
+      "alternatives": [
+        {
+          "id": "COMP-2x4-8",
+          "name": "Composite Lumber 2x4",
+          "comparison": {
+            "durability": "Higher",
+            "cost": "300% more",
+            "maintenance": "Lower",
+            "sustainability": "Higher",
+            "installation_difficulty": "Similar"
+          }
+        },
+        {
+          "id": "STEEL-2x4",
+          "name": "Steel Stud 2x4",
+          "comparison": {
+            "durability": "Higher",
+            "cost": "200% more",
+            "maintenance": "Lower",
+            "sustainability": "Lower",
+            "installation_difficulty": "Higher"
+          }
+        }
+      ]
+    }
+  ],
+  "typical_queries": [
+    {
+      "query": "What size lumber do I need for a deck joist spanning 12 feet?",
+      "context": "Residential deck construction",
+      "relevant_products": [
+        "LUM-2x4-8-PT"
+      ],
+      "relevant_codes": [
+        "IBC-2021-2304"
+      ],
+      "considerations": [
+        "Load requirements",
+        "Spacing",
+        "Environmental conditions"
+      ]
+    },
+    {
+      "query": "Can I use regular screws with pressure treated lumber?",
+      "context": "Deck construction",
+      "relevant_products": [
+        "LUM-2x4-8-PT"
+      ],
+      "relevant_documents": [
+        "TD-001",
+        "SD-PT-001"
+      ],
+      "key_points": [
+        "Corrosion resistance",
+        "Material compatibility",
+        "Safety considerations"
+      ]
+    }
+  ]
+}
