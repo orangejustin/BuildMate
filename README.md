@@ -32,16 +32,14 @@ npm install -g pnpm
 ```bash
 pnpm create vite frontend --template react
 cd frontend
-```
-
-3. Install base dependencies:
-```bash
 pnpm install
 ```
 
 4. Install chatbot-specific dependencies:
 ```bash
-pnpm install @ant-design/pro-chat antd antd-style --save
+pnpm install tailwindcss postcss autoprefixer --save-dev
+pnpm install axios dayjs classnames --save
+npx tailwindcss init -p
 ```
 
 ## Project Structure
@@ -65,8 +63,8 @@ mychatbot/
 
 1. Start the backend server:
 ```bash
-# From the backend directory
-python app.py
+# Start the FastAPI server
+uvicorn main:app --reload
 ```
 
 2. Start the frontend development server:
