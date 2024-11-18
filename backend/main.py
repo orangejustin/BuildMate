@@ -4,13 +4,13 @@ from pydantic import BaseModel
 from typing import List
 from dotenv import load_dotenv
 import os
-from services.chat_service import ChatService
+from services.chat_service import BuildingMaterialsChatService
 
 # Load environment variables
 load_dotenv()
 
-# Initialize ChatService with API key
-chat_service = ChatService(api_key=os.getenv('OPENAI_API_KEY'))
+# Initialize BuildingMaterialsChatService with API key
+chat_service = BuildingMaterialsChatService(api_key=os.getenv('OPENAI_API_KEY'))
 
 app = FastAPI()
 
@@ -33,7 +33,7 @@ class ChatRequest(BaseModel):
     messages: List[Message]
 
 @app.post("/chat")
-async def chat(request: ChatRequest):
+def chat(request: ChatRequest):
     try:
         messages = [msg.dict() for msg in request.messages]
         return chat_service.get_chat_response(messages)
