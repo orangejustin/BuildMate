@@ -28,6 +28,20 @@ export default function ChatInterface() {
   const [input, setInput] = useState('');
   const messagesEndRef = useRef(null);
   
+  useEffect(() => {
+    // Fetch welcome message when component mounts
+    const fetchWelcomeMessage = async () => {
+      try {
+        const response = await axios.get('http://localhost:8000/welcome');
+        setMessages([response.data]);
+      } catch (error) {
+        console.error('Error fetching welcome message:', error);
+      }
+    };
+    
+    fetchWelcomeMessage();
+  }, []);
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };

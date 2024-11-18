@@ -69,12 +69,6 @@ class BuildingMaterialsChatService:
         - Not use symbols like #, *, etc.
         - Not use markdown formatting like bold, italics, etc."""
         
-        # Initialize prompt template
-        self.prompt = ChatPromptTemplate.from_messages([
-            ("system", self.system_context),
-            MessagesPlaceholder(variable_name="chat_history"),
-            ("human", "{formatted_query}")
-        ])
 
     def _identify_query_type(self, query: str) -> QueryType:
         """Identify query type using QueryClassifier."""
@@ -172,8 +166,11 @@ class BuildingMaterialsChatService:
             latest_message = messages[-1]
             query = latest_message["content"]
             
+            print(f"Received query: {query}")
+            
             # 1. Classify the query
             query_type = self._identify_query_type(query)
+            print(f"Query type: {query_type}")
             
             # Handle non-building material queries differently
             if query_type.primary_type == "other":
@@ -182,30 +179,50 @@ class BuildingMaterialsChatService:
             else:
                 # 2. Get the context based on classification
                 context = self._get_query_context(query_type)
+                # Escape any curly braces in the context
+                context = context.replace("{", "{{").replace("}", "}}")
                 
                 # 3. Retrieve relevant documents
                 retrieved_docs = self._get_relevant_docs(query)
+                # Escape any curly braces in the retrieved docs
+                retrieved_docs = retrieved_docs.replace("{", "{{").replace("}", "}}")
             
-            # 4. Format the query with all context
-            formatted_query = self._format_query(query, context, retrieved_docs)
+            # Create dynamic system context with the current context and docs
+            # Escape any curly braces in the system context
+            escaped_system_context = self.system_context.replace("{", "{{").replace("}", "}}")
             
-            # 5. Get chat history
+            dynamic_system_context = escaped_system_context + "\n\n"
+            if context:
+                dynamic_system_context += f"Some context might be useful:\n{context}\n\n"
+            if retrieved_docs:
+                dynamic_system_context += f"Some information might be useful from Retrieved Documentation:\n{retrieved_docs}"
+            
+            print("Creating prompt template...")
+            
+            # Create a new prompt template with the dynamic system context
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", dynamic_system_context),
+                MessagesPlaceholder(variable_name="chat_history"),
+                ("human", query)
+            ])
+            
+            print("Getting chat history...")
             chat_history = self.memory.load_memory_variables({})["chat_history"]
             
-            # 6. Generate response using the chain
-            chain = self.prompt | self.llm | StrOutputParser()
+            print("Generating response...")
+            chain = prompt | self.llm | StrOutputParser()
             response = chain.invoke({
-                "formatted_query": formatted_query,
                 "chat_history": chat_history
             })
             
-            # 7. Save to memory
+            print(f"Generated response: {response}")
+            
+            # Save to memory and return response
             self.memory.save_context(
                 {"input": query},
                 {"output": response}
             )
             
-            # 8. Return formatted response
             return {
                 "id": str(time.time()),
                 "role": "assistant",
@@ -217,6 +234,9 @@ class BuildingMaterialsChatService:
             
         except Exception as e:
             print(f"Error in chat response: {str(e)}")
+            print(f"Error type: {type(e)}")
+            import traceback
+            print(f"Traceback: {traceback.format_exc()}")
             return {
                 "id": str(time.time()),
                 "role": "assistant",
